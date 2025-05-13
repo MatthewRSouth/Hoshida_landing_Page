@@ -201,7 +201,6 @@ body {
   .container-left {
     grid-row: 2;
     width: 100vw;
-    justify-self: center;
   }
   .hero-carousel {
     justify-self: center;
@@ -213,7 +212,8 @@ body {
   }
   .hero-orange {
     height: 1100px;
-    width: 100vw;
+    width: 480px;
+    justify-self: center;
   }
   .hero-heading {
     width: 350px;
