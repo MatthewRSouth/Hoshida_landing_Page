@@ -177,6 +177,22 @@ body {
   font-size: 25px;
   font-weight: 700;
 }
+.qr-code-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+.qr-code-placeholder {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.line {
+  margin-right: 10px;
+}
 
 /*Mobile Media Queary*/
 @media (max-width: 480px) {
