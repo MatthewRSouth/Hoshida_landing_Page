@@ -26,13 +26,13 @@ body {
 .container-left {
   justify-self: center;
   grid-column: 1;
-  width: 100vw;
+  width: 50vw;
 }
 .container-right {
   grid-column: 2;
   justify-self: center;
   align-self: center;
-  width: 100vw;
+  width: 50vw;
 }
 .hero-carousel {
   width: 850px;
@@ -184,10 +184,10 @@ body {
     width: 100vw;
     justify-content: center;
   }
+
   .header-logo {
     width: 350px;
     justify-self: center;
-    margin-right: 20px;
   }
   .hero-container {
     grid-template-columns: 1fr;
@@ -201,12 +201,15 @@ body {
   .container-left {
     grid-row: 2;
     width: 100vw;
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .hero-carousel {
     justify-self: center;
     grid-row: 1;
     width: 350px;
+    margin: 0 auto;
   }
   .mySlides {
     grid-row: 1;
@@ -221,12 +224,12 @@ body {
     text-align: center;
   }
   .hero-description {
-    width: 320px;
+    width: 350px;
     text-align: center;
   }
   .hero-form {
     width: 325px;
-    text-align: center;
+    margin: 20px auto;
   }
   .form-input {
     width: 300px;
@@ -240,8 +243,11 @@ body {
   }
   .feature-section-1 {
     width: 350px;
+    display: flex;
     flex-wrap: wrap;
-    justify-self: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
   }
   .card {
     height: 375px;
@@ -257,7 +263,7 @@ body {
     line-height: 24px;
   }
   .reviews {
-    width: 400px;
+    width: 350px;
     margin-top: 1100px;
     justify-self: center;
     margin-bottom: 10px;
@@ -274,5 +280,8 @@ body {
   }
   .img-placeholder-card {
     width: 350px;
+  }
+  footer .hero-form {
+    margin: 20px auto;
   }
 }
