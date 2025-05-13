@@ -184,13 +184,10 @@ body {
     width: 100vw;
     justify-content: center;
   }
-  body {
-    justify-content: center;
-  }
+
   .header-logo {
     width: 350px;
     justify-self: center;
-    margin-right: 20px;
   }
   .hero-container {
     grid-template-columns: 1fr;
@@ -244,6 +241,7 @@ body {
     width: 350px;
     flex-wrap: wrap;
     justify-self: center;
+    width: 100vw;
   }
   .card {
     height: 375px;
