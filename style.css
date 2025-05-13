@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+body {
+  width: 100vw;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.header-logo {
+  width: 700px;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.container-left {
+  justify-self: center;
+  grid-column: 1;
+  width: 100vw;
+}
+.container-right {
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+  width: 100vw;
+}
+.hero-carousel {
+  width: 850px;
+  align-content: center;
+}
+.mySlides {
+  display: none;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.mySlides.showing {
+  display: block;
+  opacity: 1;
+}
+.hero-orange {
+  background-color: #ffb762;
+  height: 625px;
+}
+.hero-image {
+  width: 500px;
+  height: 100%;
+}
+.hero-heading {
+  justify-self: center;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  width: 750px;
+}
+.hero-description {
+  color: white;
+  font-size: 25px;
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+  margin-top: 40px;
+  line-height: 37.5px;
+  text-align: left;
+}
+.hero-form {
+  justify-self: center;
+  align-self: flex-end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.form-input {
+  border-radius: 5px;
+  padding-left: 3px;
+  margin-bottom: 15px;
+  height: 50px;
+  font-size: 25px;
+}
+.form-name {
+  width: 250px;
+}
+.form-email {
+  width: 400px;
+  margin-left: 20px;
+}
+.btn {
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  border: 0;
+}
+.btn-blue {
+  background-color: #5b94eb;
+}
+.hero-form-btn {
+  width: 675px;
+  height: 80px;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.hero-form-btn:hover {
+  background: #4c7cc3;
+  color: rgb(255, 255, 255);
+}
+.feature-section-1 {
+  width: 100%;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  width: 422px;
+  height: 523px;
+  border: 5px solid #ffb762;
+  margin-top: 150px;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 37.5px;
+}
+.card-icon {
+  width: 125px;
+  margin-top: 30px;
+}
+.card-header {
+  font-size: 40px;
+  color: #121212;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.card-description {
+  font-size: 25px;
+  margin-top: 40px;
+}
+.reviews {
+  margin-top: 150px;
+}
+.kids-showcase-container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.img-placeholder-card {
+  width: 422px;
+  height: 523px;
+  border: 5px solid grey;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #5c5c5c;
+}
+.img-card-description {
+  text-align: center;
+  border: 5px solid #ffb762;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffb762;
+  margin-bottom: 150px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/*Mobile Media Queary*/
+@media (max-width: 480px) {
+  .header-container {
+    width: 100vw;
+    justify-content: center;
+  }
+  .header-logo {
+    width: 350px;
+    justify-self: center;
+    margin-right: 20px;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .container-right {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100vw;
+  }
+  .container-left {
+    grid-row: 2;
+    width: 100vw;
+    justify-self: center;
+  }
+  .hero-carousel {
+    justify-self: center;
+    grid-row: 1;
+    width: 350px;
+  }
+  .mySlides {
+    grid-row: 1;
+  }
+  .hero-orange {
+    height: 1100px;
+    width: 100vw;
+  }
+  .hero-heading {
+    width: 350px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero-description {
+    width: 320px;
+    text-align: center;
+  }
+  .hero-form {
+    width: 325px;
+    text-align: center;
+  }
+  .form-input {
+    width: 300px;
+    justify-self: center;
+    margin-left: 0px;
+  }
+  .hero-form-btn {
+    width: 300px;
+    font-size: 22px;
+    justify-self: center;
+  }
+  .feature-section-1 {
+    width: 350px;
+    flex-wrap: wrap;
+    justify-self: center;
+  }
+  .card {
+    height: 375px;
+  }
+  .card-icon {
+    width: 100px;
+  }
+  .card-header {
+    font-size: 25px;
+  }
+  .card-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .reviews {
+    width: 400px;
+    margin-top: 1100px;
+    justify-self: center;
+    margin-bottom: 10px;
+  }
+  .kids-showcase-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+  }
+  .img-card {
+    width: 350px;
+    margin-bottom: -20px;
+  }
+  .img-placeholder-card {
+    width: 350px;
+  }
+}
