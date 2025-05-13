@@ -26,13 +26,13 @@ body {
 .container-left {
   justify-self: center;
   grid-column: 1;
-  width: 100vw;
+  width: 50vw;
 }
 .container-right {
   grid-column: 2;
   justify-self: center;
   align-self: center;
-  width: 100vw;
+  width: 50vw;
 }
 .hero-carousel {
   width: 850px;
@@ -212,8 +212,7 @@ body {
   }
   .hero-orange {
     height: 1100px;
-    width: 480px;
-    justify-self: center;
+    width: 100vw;
   }
   .hero-heading {
     width: 350px;
@@ -221,7 +220,7 @@ body {
     text-align: center;
   }
   .hero-description {
-    width: 320px;
+    width: 350px;
     text-align: center;
   }
   .hero-form {
