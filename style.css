@@ -22,6 +22,7 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .switch {
   position: relative;
@@ -44,9 +45,6 @@ body {
   background-color: #0a3161;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-.switch span {
-  z-index: 7;
 }
 .slider:before {
   position: absolute;
