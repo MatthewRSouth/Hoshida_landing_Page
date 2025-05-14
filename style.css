@@ -13,7 +13,7 @@ body {
 .header-container {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 50vw;
 }
 .header-logo {
   width: 700px;
@@ -97,7 +97,7 @@ input:checked + .slider:before {
 }
 .mySlides {
   display: none;
-  border-radius: 10px;
+  border-radius: 40px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -145,10 +145,10 @@ input:checked + .slider:before {
   height: 50px;
   font-size: 25px;
 }
-.form-name {
+.hero-form-name {
   width: 250px;
 }
-.form-email {
+.hero-form-email {
   width: 400px;
   margin-left: 20px;
 }
@@ -156,7 +156,7 @@ input:checked + .slider:before {
   box-shadow: #5e5df0 0 10px 20px -10px;
   box-sizing: border-box;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 40px;
   cursor: pointer;
   font-weight: 700;
   opacity: 1;
@@ -186,12 +186,12 @@ input:checked + .slider:before {
   justify-content: space-evenly;
 }
 .card {
-  width: 422px;
+  width: 350px;
   height: 523px;
   border: 5px solid #ffb762;
   margin-top: 150px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 40px;
   line-height: 37.5px;
 }
 .card-icon {
@@ -206,7 +206,8 @@ input:checked + .slider:before {
 }
 .card-description {
   font-size: 25px;
-  margin-top: 40px;
+  margin-top: 30px;
+  padding: 0px 10px 0px 10px;
 }
 .reviews {
   margin-top: 150px;
@@ -220,7 +221,7 @@ input:checked + .slider:before {
   width: 422px;
   height: 523px;
   border: 5px solid grey;
-  border-radius: 10px;
+  border-radius: 40px;
   margin-bottom: 30px;
   background-color: #5c5c5c;
 }
@@ -228,7 +229,7 @@ input:checked + .slider:before {
   text-align: center;
   border: 5px solid #ffb762;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 40px;
   color: #ffb762;
   margin-bottom: 150px;
   font-size: 25px;
@@ -249,6 +250,14 @@ input:checked + .slider:before {
 }
 .line {
   margin-right: 10px;
+}
+
+.footer-form-name {
+  width: 250px;
+}
+.footer-form-email {
+  width: 400px;
+  margin-left: 20px;
 }
 
 /*Mobile Media Queary*/
