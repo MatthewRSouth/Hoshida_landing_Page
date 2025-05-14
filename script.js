@@ -21,7 +21,7 @@ function carousel() {
 const jpnLang = {
   heroTitle: "楽しくてアクティブな英語の授業", //楽しくてアクティブな英語の授業
   heroDescription:
-    "子どもたちは楽しいと感じた時に,より多くのことを学びます。経験豊かな先生たちが子どもたちが夢中になれる楽しいレッスンを提供します。他ではできない海外にいるような体験をしに来てください。<b>まずは無料体験のご予約を!</b>",
+    "子どもたちは楽しいと感じた時に,より多くのことを学びます。経験豊かな先生たちが子どもたちが夢中になれる楽しいレッスンを提供します。他ではできない海外にいるような体験をしに来てください。<strong>まずは無料体験のご予約を!</strong>",
   submit: "ご予約される方はこちら!",
   attentionTitle: "少人数クラス",
   attentionDescription:
@@ -40,7 +40,7 @@ const jpnLang = {
 const engLang = {
   heroTitle: "FUN and INTERACTIVE English Lessons!",
   heroDescription:
-    "Kids learn better when they have fun, and our highly trained teachers make lessons that cater to having fun with the kids. We offer an immersive experience like no other, so <b>schedule your trial today!</b>",
+    "Kids learn better when they have fun, and our highly trained teachers make lessons that cater to having fun with the kids. We offer an immersive experience like no other, so schedule your trial today!",
   submit: "Show me a trial lesson!",
   attentionTitle: "Individual Attention",
   attentionDescription:
