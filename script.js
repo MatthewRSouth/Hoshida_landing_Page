@@ -104,7 +104,7 @@ if (slider) {
       this.style.setProperty("--slider-content", '"日本');
       //Hero Section
       hero_heading.textContent = jpnLang.heroTitle;
-      heroDescription.textContent = jpnLang.heroDescription;
+      heroDescription.innerHTML = jpnLang.heroDescription;
       heroInputName.placeholder = "お名前";
       heroEmailName.placeholder = "メールアドレス";
       //Footer section
