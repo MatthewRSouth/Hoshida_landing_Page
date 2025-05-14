@@ -21,7 +21,7 @@ function carousel() {
 const jpnLang = {
   heroTitle: "楽しくてアクティブな英語の授業", //楽しくてアクティブな英語の授業
   heroDescription:
-    "子どもたちは楽しいと感じた時に,より多くのことを学びます。経験豊かな先生たちが子どもたちが夢中になれる楽しいレッスンを提供します。他ではできない海外にいるような体験をしに来てください。まずは無料体験のご予約を!",
+    "子どもたちは楽しいと感じた時に,より多くのことを学びます。経験豊かな先生たちが子どもたちが夢中になれる楽しいレッスンを提供します。他ではできない海外にいるような体験をしに来てください。<b>まずは無料体験のご予約を!</b>",
   submit: "ご予約される方はこちら!",
   attentionTitle: "少人数クラス",
   attentionDescription:
@@ -40,7 +40,7 @@ const jpnLang = {
 const engLang = {
   heroTitle: "FUN and INTERACTIVE English Lessons!",
   heroDescription:
-    "Kids learn better when they have fun, and our highly trained teachers make lessons that cater to having fun with the kids. We offer an immersive experience like no other, so schedule your trial today!",
+    "Kids learn better when they have fun, and our highly trained teachers make lessons that cater to having fun with the kids. We offer an immersive experience like no other, so <b>schedule your trial today!</b>",
   submit: "Show me a trial lesson!",
   attentionTitle: "Individual Attention",
   attentionDescription:
@@ -90,23 +90,30 @@ const subjectsCardHeader = document.querySelector(".js-subjects-header");
 const subjectsCardDescription = document.querySelector(
   ".js-subjects-description"
 );
+//Values Section
 const familyDescription = document.querySelector(".js-family-description");
 const gamesDescription = document.querySelector(".js-games-description");
 const memoriesDescription = document.querySelector(".js-family-memories");
+
 // Handles the state b/w English and Japanese languages, and changes the textcontent based on the desired language
 if (slider) {
   slider.addEventListener("click", function () {
     if (this.dataset.lang === "EN" || !this.dataset.lang) {
+      //-----Japanese----
       this.dataset.lang = "日本";
       this.style.setProperty("--slider-content", '"日本');
+      //Hero Section
       hero_heading.textContent = jpnLang.heroTitle;
       heroDescription.textContent = jpnLang.heroDescription;
       heroInputName.placeholder = "お名前";
       heroEmailName.placeholder = "メールアドレス";
+      //Footer section
       footerInputName.placeholder = "お名前";
       footerEmailName.placeholder = "メールアドレス";
+      //Submit Buttons
       submitButton.textContent = jpnLang.submit;
       footerSubmitBtn.textContent = jpnLang.submit;
+      //Feature Cards
       individualAttentionCardHeader.textContent = jpnLang.attentionTitle;
       individualAttentionCardDescription.textContent =
         jpnLang.attentionDescription;
@@ -115,20 +122,26 @@ if (slider) {
         jpnLang.genuine_EnglishDescription;
       subjectsCardHeader.textContent = jpnLang.subjectsTitle;
       subjectsCardDescription.textContent = jpnLang.subjectsDescription;
+      //Values Section
       familyDescription.textContent = jpnLang.family;
       gamesDescription.textContent = jpnLang.games;
       memoriesDescription.textContent = jpnLang.memories;
     } else {
+      //-----English----
       this.dataset.lang = "EN";
       this.style.setProperty("--slider-content", '"EN');
+      //Hero Section
       hero_heading.textContent = engLang.heroTitle;
       heroDescription.textContent = engLang.heroDescription;
       heroInputName.placeholder = "Name";
       heroEmailName.placeholder = "E-mail";
+      //Footer section
       footerInputName.placeholder = "Name";
       footerEmailName.placeholder = "E-mail";
+      //submit buttons
       submitButton.textContent = engLang.submit;
       footerSubmitBtn.textContent = engLang.submit;
+      //Feature section
       individualAttentionCardHeader.textContent = engLang.attentionTitle;
       individualAttentionCardDescription.textContent =
         engLang.attentionDescription;
@@ -137,6 +150,7 @@ if (slider) {
         engLang.genuine_EnglishDescription;
       subjectsCardHeader.textContent = engLang.subjectsTitle;
       subjectsCardDescription.textContent = engLang.subjectsDescription;
+      //Values Section
       familyDescription.textContent = engLang.family;
       gamesDescription.textContent = engLang.games;
       memoriesDescription.textContent = engLang.memories;
