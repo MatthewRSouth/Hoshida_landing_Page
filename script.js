@@ -19,7 +19,7 @@ function carousel() {
 
 //objects holding Japanese and English translations.
 const jpnLang = {
-  heroTitle: "楽しくてアクティブな英語", //楽しくてアクティブな英語の授業
+  heroTitle: "楽しくてアクティブな英語の授業", //楽しくてアクティブな英語の授業
   heroDescription:
     "子どもたちは楽しいと感じた時に,より多くのことを学びます。経験豊かな先生たちが子どもたちが夢中になれる楽しいレッスンを提供します。他ではできない海外にいるような体験をしに来てください。まずは無料体験のご予約を!",
   submit: "ご予約される方はこちら!",
