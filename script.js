@@ -192,7 +192,6 @@ footerForm.addEventListener("submit", async function (event) {
 
   footerSubmitBtn.disabled = true;
   footerSubmitBtn.textContent = "Submitting...";
-  footerFormMessage.textContent = "";
 
   const formData = new FormData(footerForm);
 
@@ -202,8 +201,7 @@ footerForm.addEventListener("submit", async function (event) {
       mode: "no-cors",
       body: formData,
     });
-    footerFormMessage.textContent = "Thank you! We will email you shortly!";
-    footerFormMessage.style.color = "green";
+    window.location.href = "./ThankYou.html";
   } catch (error) {
     console.error("Error submitting form", error);
     footerFormMessage.textContent = "An error has occured, please try again";
