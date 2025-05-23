@@ -106,7 +106,6 @@ body {
     display: flex;
     justify-content: space-around;
     position: relative;
-    right: 25px;
   }
   .website {
     position: relative;
@@ -114,7 +113,7 @@ body {
   }
   .instagram {
     position: relative;
-    right: 80px;
+    right: 100px;
   }
   .website-icon {
     position: relative;
@@ -123,6 +122,6 @@ body {
     position: relative;
     bottom: 40px;
     height: 75px;
-    right: 200px;
+    right: 220px;
   }
 }
