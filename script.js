@@ -167,7 +167,6 @@ heroForm.addEventListener("submit", async function (event) {
 
   submitButton.disabled = true;
   submitButton.textContent = "Submitting...";
-  heroFormMessage.textContent = "";
 
   const formData = new FormData(heroForm);
 
@@ -177,8 +176,7 @@ heroForm.addEventListener("submit", async function (event) {
       mode: "no-cors",
       body: formData,
     });
-    heroFormMessage.textContent = "Thank you! We will email you shortly!";
-    heroFormMessage.style.color = "green";
+    window.location.href = "./ThankYou.html";
   } catch (error) {
     console.error("Error submitting form: ", error);
     heroFormMessage.textContent = "An error has occured, please try again";
