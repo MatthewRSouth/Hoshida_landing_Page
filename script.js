@@ -188,7 +188,7 @@ heroForm.addEventListener("submit", async function (event) {
 });
 
 footerForm.addEventListener("submit", async function (event) {
-  event.preventDefault;
+  event.preventDefault();
 
   footerSubmitBtn.disabled = true;
   footerSubmitBtn.textContent = "Submitting...";
