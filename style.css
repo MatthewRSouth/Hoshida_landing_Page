@@ -245,16 +245,17 @@ input:checked + .slider:before {
   display: flex;
   width: 100vw;
   justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 70px;
 }
 .qr-code-placeholder {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   background-color: grey;
   display: flex;
   justify-content: center;
   text-align: center;
-}
-.line {
+  margin: 40px;
   margin-right: 10px;
 }
 
@@ -264,6 +265,20 @@ input:checked + .slider:before {
 .footer-form-email {
   width: 400px;
   margin-left: 20px;
+}
+.website-icon {
+  position: relative;
+  right: 125px;
+  bottom: 70px;
+  text-align: center;
+  margin-top: 30px;
+  height: 75px;
+}
+.instagram-icon {
+  position: relative;
+  right: 125px;
+  bottom: 40px;
+  height: 75px;
 }
 
 /*Mobile Media Queary*/
@@ -370,6 +385,26 @@ input:checked + .slider:before {
     width: 350px;
   }
   .footer-form {
-    margin: 20px auto;
+    margin-left: 70px;
+  }
+  .website {
+    margin-left: 130px;
+  }
+  .instagram {
+    position: relative;
+    right: 30px;
+  }
+  .website-icon {
+    position: relative;
+    font-size: 17px;
+    right: 110px;
+    bottom: 53px;
+    height: 50px;
+  }
+  .instagram-icon {
+    height: 50px;
+    position: relative;
+    right: 145px;
+    bottom: 20px;
   }
 }
