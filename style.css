@@ -369,7 +369,7 @@ input:checked + .slider:before {
   .img-placeholder-card {
     width: 350px;
   }
-  footer .hero-form {
+  .footer-form {
     margin: 20px auto;
   }
 }
