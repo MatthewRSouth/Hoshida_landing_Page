@@ -138,6 +138,12 @@ input:checked + .slider:before {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.footer-form {
+  justify-self: center;
+  align-self: flex-end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .form-input {
   border-radius: 5px;
   padding-left: 3px;

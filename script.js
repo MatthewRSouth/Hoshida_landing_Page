@@ -157,3 +157,61 @@ if (slider) {
     }
   });
 }
+const heroForm = document.querySelector(".hero-form");
+const footerForm = document.querySelector(".footer-form");
+const GOOGLE_FORM_ACTION_URL = `https://docs.google.com/forms/u/0/d/e/1FAIpQLSdm2gYgHpAhhsghcHIptLqJLC8MYGIt6A61fZ__9PqRrvZLzg/formResponse`;
+const heroFormMessage = document.querySelector(".hero-form-message");
+const footerFormMessage = document.querySelector(".footer-form-message");
+heroForm.addEventListener("submit", async function (event) {
+  event.preventDefault();
+
+  submitButton.disabled = true;
+  submitButton.textContent = "Submitting...";
+  heroFormMessage.textContent = "";
+
+  const formData = new FormData(heroForm);
+
+  try {
+    const response = await fetch(GOOGLE_FORM_ACTION_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: formData,
+    });
+    heroFormMessage.textContent = "Thank you! We will email you shortly!";
+    heroFormMessage.style.color = "green";
+  } catch (error) {
+    console.error("Error submitting form: ", error);
+    heroFormMessage.textContent = "An error has occured, please try again";
+    heroFormMessage.style.color = "red";
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit";
+  }
+});
+
+footerForm.addEventListener("submit", async function (event) {
+  event.preventDefault;
+
+  footerSubmitBtn.disabled = true;
+  footerSubmitBtn.textContent = "Submitting...";
+  footerFormMessage.textContent = "";
+
+  const formData = new FormData(footerForm);
+
+  try {
+    const response = await fetch(GOOGLE_FORM_ACTION_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: formData,
+    });
+    footerFormMessage.textContent = "Thank you! We will email you shortly!";
+    footerFormMessage.style.color = "green";
+  } catch (error) {
+    console.error("Error submitting form", error);
+    footerFormMessage.textContent = "An error has occured, please try again";
+    footerFormMessage.style.color = "red";
+  } finally {
+    footerSubmitBtn.disabled = false;
+    footerSubmitBtn.textContent = "Submit";
+  }
+});
