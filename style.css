@@ -79,6 +79,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  box-shadow: 2px 5px 10px #262626;
 }
 .container-left {
   justify-self: center;
@@ -94,6 +95,8 @@ input:checked + .slider:before {
 .hero-carousel {
   width: 850px;
   align-content: center;
+  box-shadow: 2px 5px 10px #262626;
+  border-radius: 40px;
 }
 .mySlides {
   display: none;
@@ -163,6 +166,7 @@ input:checked + .slider:before {
   box-sizing: border-box;
   color: #ffffff;
   border-radius: 40px;
+  box-shadow: 2px 5px 10px #262626;
   cursor: pointer;
   font-weight: 700;
   opacity: 1;
@@ -192,8 +196,8 @@ input:checked + .slider:before {
   justify-content: space-evenly;
 }
 .card {
-  width: 350px;
-  height: 523px;
+  width: 370px;
+  height: 540px;
   border: 5px solid #ffb762;
   margin-top: 150px;
   text-align: center;
