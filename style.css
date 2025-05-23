@@ -389,10 +389,11 @@ input:checked + .slider:before {
     width: 350px;
   }
   .footer-form {
-    margin-left: 70px;
+    margin-left: 50px;
   }
   .website {
-    margin-left: 130px;
+    position: relative;
+    left: 50px;
   }
   .instagram {
     position: relative;
@@ -401,7 +402,7 @@ input:checked + .slider:before {
   .website-icon {
     position: relative;
     font-size: 17px;
-    right: 110px;
+    right: 65px;
     bottom: 53px;
     height: 50px;
   }
