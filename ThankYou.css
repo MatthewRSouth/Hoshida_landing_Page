@@ -109,7 +109,7 @@ body {
   }
   .website {
     position: relative;
-    left: 5px;
+    right: 10px;
   }
   .instagram {
     position: relative;
@@ -117,6 +117,7 @@ body {
   }
   .website-icon {
     position: relative;
+    right: 130px;
   }
   .instagram-icon {
     position: relative;
